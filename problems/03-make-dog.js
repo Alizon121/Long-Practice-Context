@@ -5,15 +5,19 @@ constructor(name) {
 }
 
 static makeJet() {
-	return newName("Jet")
+	// return newName("Jet");
+	const jet = new Dog('Jet');
+	return jet
 }
 
 changeName(newName) {
 this.name = newName;
+return this.name
 }
 
 speak(word) {
-return `${this.name} says ${word}`;
+let string = `${this.name} says ${word}`;
+return string
 }
 
 }
