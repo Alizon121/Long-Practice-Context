@@ -1,8 +1,11 @@
 function allTheArgs(func, ...args) {
-  return function() {
+  // return function() {
     // I have a question about syntax and what we are passing into the static method.
-     return func.apply(this, args.concat(Array.from(arguments)))
-}
+    //  return func.apply(this, args.concat(Array.from(arguments)))
+
+// }
+return func.bind(null, ...args);
+
 }
 function sum(...nums) {
   return nums.reduce((acc, num) => acc + num);

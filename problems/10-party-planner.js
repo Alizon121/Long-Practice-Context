@@ -5,10 +5,14 @@ constructor() {
 }
 
 addToGuestList(name) {
-	this.guestList.push(name);
-}
+		this.guestList.push(name);
+	}
+throwParty() {
 
 }
+	}
+
+
 
 /*****************************************************************************/
 /***************** DO NOT MODIFY ANYTHING UNDER THIS LINE ********************/
